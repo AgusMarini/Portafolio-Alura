@@ -1,0 +1,793 @@
+
+:root{
+    --font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  --cor-backgrund: #cda3c6;
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+   --cor-letras:  rgb(103, 100, 100);
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+header{
+    background-color: #d7a5df;
+    display: flex;
+    align-items:center;
+    height:8vh;
+}
+.menu__title{
+    padding: 1rem;
+}
+.menu-toggle{
+    display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+nav {
+    /* text-align: center; */
+    display: flex;
+    width: 100%;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    
+}
+.nav-ul-list {
+    list-style-type: none;
+    margin: 20rem ;
+    gap: 2rem;
+    margin-right: 10rem;
+    padding: 0;
+    overflow: hidden;
+    
+    display: flex;
+    justify-content: center ;
+    
+}
+.nav-li{
+   
+    margin-left: 1rem;
+}
+.nav-li a {
+    
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+.nav-li a:hover {
+    background-color: grey;
+}
+nav .nav-ul-list .nav-li {
+    float: left;
+    list-style: none;
+    margin: 10px;
+    color: #0e0d0d;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+}
+.principal{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 10rem;
+    padding: 1rem;
+}
+.primer-titulo{
+   display: flex;
+   justify-content: space-between;
+    width: 50%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    color: darkgrey;   
+
+}
+.primer-subtitulo{
+   margin: 1.5rem;
+   width: 50%;
+   font-size: 1.5rem;
+   color: gray;
+}
+.foto{
+    flex: 0 0 auto;
+    width: 80%;
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+}
+.paginas{
+    display: flex;
+    gap: 9rem;
+    
+}
+
+.pagina_s a{
+    color: #cda3c6;
+   
+}
+.pagina_s :hover{
+    color: grey;
+}
+.foto-mia{
+     width: 20%;
+    height: 20%;
+    margin: 5rem;
+    padding: 0;
+    
+}
+
+.sobre-mi{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #cda3c6;
+    width: 80%;
+    margin: 7rem;
+}
+.tercer-subtitulo{
+    text-transform: uppercase;
+    color: rgb(103, 100, 100);
+    font-size: 2rem;
+}
+.parrafo{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.skills{
+   
+    background-color: var(--cor-backgrund);
+    width: 80%;
+    margin: 7vw;
+    padding: 2rem;
+}
+.skills__box{
+    padding: 2rem 4rem 4rem 1rem;
+    height: 3rem;
+    transition: transform 0.3s;
+    
+}
+.skills__box:hover{
+    transform: translateY(10px);
+}
+
+.sub-skills{
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--cor-letras);
+    
+}
+.skills-line{
+   margin-top: 2rem;
+   display: flex;
+   gap: 4rem;
+   width: 100%;
+    height: 20%;    
+    padding: 1rem;
+}
+.skills__img{
+ display: flex;
+ justify-content: center;
+ width: 100%;
+ height: 20%;
+ margin: 0.5rem;
+ 
+}
+.skills__name{
+    margin: 2rem;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: var(--font-family);
+    color: var(--cor-letras);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subtitulo-hobbies{
+    text-align: center;
+    margin: 1rem;
+    font-family: var(--font-family);
+    color: var(--cor-letras);
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.hobbies{
+    background-color: var(--cor-backgrund);
+    width: 80%;
+    margin: 7vw;
+    padding: 2rem;
+    
+}
+.hobbies-line{
+    margin-top: 2rem;
+   display: flex;
+   justify-content: center;
+   gap: 7rem;
+   width: 100%;
+    height: 20%;    
+    padding: 1rem;
+}
+.hobbies-box{
+    padding: 2rem 4rem 4rem 1rem;
+    height: 3rem;
+    transition: transform 0.3s;
+}
+.hobbies-box:hover{
+    transform: translateY(10px);
+}
+.hobbies-name{
+    margin: 2rem;
+    color: var(--cor-letras);
+    font-family: var(--font-family);
+}
+.hobbies-img{
+    
+    text-align: center;
+}
+.formacion{
+    background-color: var(--cor-backgrund);
+    width: 80%;
+    margin: 7vw;
+    padding: 2rem;
+    
+}
+.formacion-titulo{
+    text-align: center;
+    margin: 1rem;
+    font-family: var(--font-family);
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--cor-letras);
+    margin: 1rem;
+    padding: 1rem;
+}
+.formacion-caja{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+    gap: 5rem;
+    
+}
+.academic__courses__box{
+   display: flex;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+
+
+}
+.academic__courses__list{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin: 1rem;
+   
+
+}
+
+.experience{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 7rem;
+    background-color: var(--cor-backgrund);
+}
+.experience__section__title{
+    font-family: var(--font-family);
+    color: var(--cor-letras);
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.experience__img{
+    width: 100%;
+}
+.experiencie__box{
+    margin: 2rem;
+}
+.contacto{
+    display: flex;
+    justify-content: center;
+    margin: 7rem;
+}
+.contacto-box{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--cor-backgrund);
+}
+.img-contacto{
+    padding: 5rem;
+}
+.contacto-sub{
+    text-align: center;
+    font-family: var(--font-family);
+    color: var(--cor-letras);
+    font-size: 2rem;
+}
+.texto{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem;
+    
+}
+
+.contatco-form{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    gap: 2rem;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contacto-input{
+    background-color: rgb(198, 194, 194);
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1rem;
+    
+}
+
+.contacto-boton{
+    width: 50%;
+    text-align: center;
+   background-color: var(--cor-letras);
+   display: flex;
+   justify-content: center;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem ;
+}
+.footer{
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  color: var(--cor-letras);
+  text-align: center;
+  opacity: 1;
+  color: #000;
+  
+}
+
+
+@media screen and (max-width: 400px) {
+    
+    header{
+        padding: 1.5rem;
+        width: 120%;
+    }
+   
+    nav {
+        display: none;
+        width: 100%;
+        
+    }
+  
+    .menu-toggle {
+        display: block;
+        margin-left: 1rem;
+        
+    }
+    .nav-ul-list {
+        list-style-type: none;
+        margin: 2rem;
+        gap: 2rem;
+        margin-right: 10rem;
+        padding: 1rem;
+        overflow: hidden;
+        background: #cda3c6;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 1;
+    }
+    nav.active {
+        display: flex;
+        justify-content: center;
+        flex-direction: column; /* Agregar esta línea para mostrar en columna */
+        background-color: #cda3c6;
+        position: absolute;
+        top: 8vh;
+        right: 1rem;
+        padding: 1rem;
+        z-index: 1;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  
+    nav li {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 45%;
+        align-items: center;
+        margin-left: 70%;
+    }
+    
+.foto-mia{
+    display: none;
+}
+  .primer-titulo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .principal{
+    padding: 0;
+    margin: 2rem;
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-right: 6rem;
+}
+
+.paginas {
+    display: flex;
+    gap: 8rem;
+}
+    .pag-a{
+    font-size: 1.5rem;
+    
+}
+.pagina_s{
+    display: flex;
+    margin-left: 1rem;
+    width: 0%;
+    flex-direction: row-reverse;
+    margin: 0;
+    padding: 0;
+}
+.sobre-mi{
+    
+    margin: 1rem;
+
+    
+}
+.parrafo{
+    font-size: 1rem;
+    width: 300px;
+}
+.skills{
+   
+    width: 80%;
+    margin: 1.2rem;
+    padding: 0.5rem;
+}
+.skills-line {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -1rem;
+    padding-top: 0;
+}
+.hobbies {
+    
+    width: 80%;
+    margin: 1rem;
+    padding: 1rem
+}
+.hobbies-line{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 6rem;
+}
+.hobbies-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hobbies-img {
+    text-align: center;
+}
+.hobbies-name{
+    text-align: center;
+}
+.formacion {
+    
+    width: 80%;
+    margin: 1rem;
+    padding: 1rem;
+}
+.formacion-caja{
+    padding-top: 2rem;
+    
+}
+.academic__courses__list{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.experience{
+    width: 95%;
+    margin: 1rem;
+    padding: 0;
+}
+.experience__section__title{
+    text-align: center;
+}
+.experience__info-container {
+    margin: 1.5rem;
+}
+.contacto{
+    margin: 0;
+}
+.img-contacto{
+    display: none;
+}
+
+.contatco-form {
+    margin: 0 11rem 10rem;
+}
+.contacto-input {
+    width: 150%;
+}
+.contacto-boton{
+    width: 150%;
+}
+.texto{
+    margin: 3rem;
+}
+}
+@media screen and (max-width: 700px) {
+    
+    header{
+        padding: 1.5rem;
+        width: 120%;
+    }
+   
+    nav {
+        display: none;
+        width: 100%;
+        
+    }
+  
+    .menu-toggle {
+        display: block;
+        margin-left: 9rem;
+        
+    }
+    .nav-ul-list {
+        list-style-type: none;
+        margin: 2rem;
+        gap: 2rem;
+        margin-right: 10rem;
+        padding: 1rem;
+        overflow: hidden;
+        background: #cda3c6;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 1;
+    }
+    nav.active {
+        display: flex;
+        justify-content: center;
+        flex-direction: column; /* Agregar esta línea para mostrar en columna */
+        background-color: #cda3c6;
+        position: absolute;
+        top: 5rem;
+        
+        padding: 1rem;
+        z-index: 1;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  
+    nav li {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+        margin-left: 15rem;
+    }
+    
+.foto-mia{
+    display: none;
+}
+  .primer-titulo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .principal{
+    padding: 0;
+    margin: 2rem;
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-right: 6rem;
+}
+
+.paginas {
+    display: flex;
+    gap: 8rem;
+}
+    .pag-a{
+    font-size: 1.5rem;
+    
+}
+.pagina_s{
+    display: flex;
+    margin-left: 1rem;
+    width: 0%;
+    flex-direction: row-reverse;
+    margin: 0;
+    padding: 0;
+}
+.sobre-mi{
+    
+    margin: 3rem;
+
+    
+}
+.parrafo{
+    font-size: 1rem;
+    width: 300px;
+}
+.skills{
+   
+    width: 80%;
+    margin: 3rem;
+    padding: 1rem;
+}
+.skills-line {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -1rem;
+    padding-top: 0;
+}
+.hobbies {
+    
+    width: 80%;
+    margin: 3rem;
+    padding: 1rem
+}
+.hobbies-line{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 6rem;
+}
+.hobbies-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hobbies-img {
+    text-align: center;
+}
+.hobbies-name{
+    text-align: center;
+}
+.formacion {
+    
+    width: 80%;
+    margin: 3rem;
+    padding: 1rem;
+}
+.formacion-caja{
+    padding-top: 2rem;
+    
+}
+.academic__courses__list{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.experience{
+    width: 80%;
+    margin: 3rem;
+    padding: 1rem;
+}
+.experience__section__title{
+    text-align: center;
+}
+.experience__info-container {
+    margin: 1.5rem;
+}
+.contacto{
+    margin: 3rem;
+    padding: 2rem;
+}
+.img-contacto{
+    display: none;
+}
+
+.contatco-form {
+    margin: 0 11rem 10rem;
+}
+.contacto-input {
+    width: 150%;
+}
+.contacto-boton{
+    width: 150%;
+}
+.texto{
+    margin: 3rem;
+}
+}
+@media screen and (max-width: 1300px) {
+    .nav-ul-list{
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+        background: none;
+        text-align: center;
+    } 
+    .principal{
+        margin: 2rem;
+        text-align: center;
+        padding: 1rem;
+    }
+    .sobre-mi {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem;
+        background-color: #cda3c6;
+        width: 80%;
+        margin: 4rem;
+    }
+    .skills-line{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+
+    }
+    .hobbies-line{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .experience {
+        margin: 3rem;
+        padding: 3rem;
+      
+    }
+    .img-contacto{
+        display: none;
+    }
+}
+

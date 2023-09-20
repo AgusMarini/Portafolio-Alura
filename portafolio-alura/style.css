@@ -130,7 +130,8 @@ nav .nav-ul-list .nav-li {
 .foto-mia{
      width: 20%;
     height: 20%;
-    margin: 5rem;
+    margin: 3rem;
+    margin-right: 30rem;
     padding: 0;
     
 }
@@ -392,9 +393,10 @@ nav .nav-ul-list .nav-li {
         
     }
   
-    .menu-toggle {
+    .button menu-toggle {
         display: block;
-        margin-left: 1rem;
+        margin-right:10rem;
+        
         
     }
     .nav-ul-list {
@@ -562,7 +564,9 @@ nav .nav-ul-list .nav-li {
     margin: 3rem;
 }
 }
-@media screen and (max-width: 700px) {
+
+
+@media screen and (max-width: 900px) {
     
     header{
         padding: 1.5rem;
@@ -577,7 +581,7 @@ nav .nav-ul-list .nav-li {
   
     .menu-toggle {
         display: block;
-        margin-left: 9rem;
+        margin-left: 24rem;
         
     }
     .nav-ul-list {
@@ -682,12 +686,7 @@ nav .nav-ul-list .nav-li {
     margin: 3rem;
     padding: 1rem
 }
-.hobbies-line{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-top: 6rem;
-}
+
 .hobbies-box{
     display: flex;
     justify-content: center;
@@ -746,7 +745,47 @@ nav .nav-ul-list .nav-li {
     margin: 3rem;
 }
 }
-@media screen and (max-width: 1300px) {
+
+
+@media  (max-width:1200px) {
+    .nav-ul-list{
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+        background: none;
+        text-align: center;
+    } 
+    .foto-mia{
+        margin: 20rem;
+        margin-left: 10rem;
+        
+    }
+    .skills-line{
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0;
+
+    }
+    .hobbies-line{
+        display: flex;
+        gap: 0.5rem;
+        }
+    .experience {
+        margin: 3rem;
+        padding: 3rem;
+      
+    }
+    .formacion-caja{
+        display: flex;
+        gap: 0.5rem;
+    }
+    .img-contacto{
+        display: none;
+    }
+    
+}
+@media screen and (min-width: 1200px) {
     .nav-ul-list{
         display: flex;
         justify-content: center;
@@ -771,23 +810,23 @@ nav .nav-ul-list .nav-li {
     .skills-line{
         display: flex;
         justify-content: center;
-        flex-direction: column;
+        gap: 0.5rem;
         padding: 0;
 
     }
     .hobbies-line{
         display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-    }
+        gap: 0.5rem;
+        }
     .experience {
         margin: 3rem;
         padding: 3rem;
       
     }
-    .img-contacto{
-        display: none;
+    
+    .formacion-caja{
+        display: flex;
+        gap: 0.5rem;
     }
 }
 
